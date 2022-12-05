@@ -1,4 +1,100 @@
 @charset "UTF-8";
+
+/*----------------------------------------
+header
+------------------------------------- */
+.header {
+  width: 100%;
+}
+.header__body {
+  max-width: 1084px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__logo {
+  width: 424px;
+}
+
+.header__title {
+  width: 660px;
+  margin-left: 36px;
+  padding: 43px 55px;
+  font-size: 20px;
+  border-top: 1px solid ;
+  border-bottom: 1px solid ;
+}
+
+.header__image {
+  width: 100%;
+  height: 200px;
+  background: url(../images/img素材書き出しサンプル/bg_top_header.jpg);
+  background-repeat: repeat-x;
+}
+
+@media screen and (max-width:767px){
+  .header__body {
+    flex-direction: column;
+    padding: 0 20px;  
+  }
+  .header__logo {
+    width: 100%;
+  }
+  .header__title {
+    width: 100%;
+    margin-left: 0;
+    padding: 30px 0;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+  .header__image {
+    background: url(../images/img素材書き出しサンプル/bg_top_header_sp.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+}
+/*----------------------------------------
+gnav
+------------------------------------- */
+.gnav {
+  background:#F5EFD7;
+  width: 100%;
+  height: 80px;
+}
+.gnav__list {
+  max-width: 1084px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 28px 50px 24px;
+}
+.gnav__item {
+  font-size: 20px;
+}
+.gnav__item::before {
+  display: inline-block;
+  content: "";
+ background: url(../images/img素材書き出しサンプル/ico_paw.svg) center center / contain no-repeat;
+  margin-left: 6px;
+  width: 28px;
+  height: 28px;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 767px) {
+.gnav {
+  height: 30px;
+}
+.gnav__list {
+  display: none;
+}
+}
+/*----------------------------------------
+sp-nav
+------------------------------------- */
 /*----------------------------------------
 	section
 ----------------------------------------*/
@@ -12,6 +108,17 @@
   margin-bottom: 100px;
 }
 
+@media screen and (max-width: 767px) {
+  .container  {
+    width: 100%;
+    margin: 80px auto;
+    padding: 0 20px;
+  }
+  .section:nth-child(2) {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
 .heading__block {
   display: flex;
   flex-direction: row;
@@ -191,7 +298,134 @@
   border-bottom: 2px solid #341E12;
   transform: rotate(-45deg);
   pointer-events: none;
+}
 
+@media screen and (max-width: 767px) {
+  .heading__block {
+    margin-bottom: 20px;
+  }
+  .heading__title {
+    font-size: 24px;
+    display: flex;
+  }
+  .heading__title span {
+    width: 100%;
+    margin-left: 63px;
+    padding-top: 25px;
+  }
+  
+  .heading__icon {
+    width: 85px;
+    bottom: 8px;
+  }
+  
+  .info-data {
+    flex-direction: column;
+    padding: 13px 0 15px;
+  }
+  
+  .info-data__data {
+    margin-bottom: 8px;
+  }
+  .info-data__icon {
+    margin-bottom: 10px;
+  }
+  
+  .info-data__txt {
+    text-decoration: none
+  }
+
+  /* ribbon */
+.ribbon-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 83px;
+  overflow: hidden;
+}
+.ribbon__text {
+  display: inline-block;
+  position: absolute;
+  padding: 5px 0;
+  left: -40px;
+  top: 15px;
+  width: 150px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  color: #fff;
+  background: #F7320E;
+  transform: rotate(-45deg);
+}
+.pd-cardList {
+ flex-direction: column;
+ justify-content: space-between;
+}
+.pd-cardList__item  {
+  width: 100%;
+  padding: 20px 15px;
+}
+.pd-cardList__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.pd-card__body {
+  padding-top: 30px;
+  padding-bottom: 10px;
+
+}
+.pd-card__title {
+  font-size: 18px;
+  font-weight: bold; 
+  border-bottom: 1px dashed #341E12;
+}
+.pd-card__text {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  height: 56px;
+}
+.pd-card__price {
+  margin-top: 30px;
+  font-weight: bold;
+  text-align: right;
+}
+
+
+/* btn */
+.pc-card__botton {
+  border: 1px solid #341E12;
+  border-radius: 6px;
+}
+.btn {
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.7;
+  background: transparent;
+  text-align: center;
+  margin: 16px auto 14px;
+}
+.btn--more {
+  position: relative;
+  display: block;
+}
+.btn--more::after{
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 8px;
+  height: 8px;
+  right: 110px;
+  border-right: 2px solid #341E12;
+  border-bottom: 2px solid #341E12;
+  transform: rotate(-45deg);
+  pointer-events: none;
+}
 }
 
 /* category */
@@ -219,6 +453,19 @@
 }
 .category__title {
   font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  .category-list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .category-list__item {
+    width: 100%;
+  }
+  .category__title {
+    font-size: 16px;
+  }
 }
 /* media */
 .media {
@@ -274,9 +521,55 @@
   width: 100px;
   font-weight: bold;
 }
+@media screen and (max-width: 767px){
+  .media__body {
+    width: 100%;
+    padding: 80px 20px;
+  }
+  .media__title {
+    font-size: 24px;
+  }
+  .media__txt {
+    text-align: left;
+    padding: 30px 0 50px;
+  }
+  .store__body {
+    flex-direction:column ;
+  }
+  .store__body:nth-child(2) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .store__thumb {
+    width: 100%;
+    height: auto;
+  }
+  .store__detail {
+    text-align-last: left;
+    width: 100%;
+  }
+  .store__title {
+    margin: 20px 0;
+    font-size: 16px;
+    padding: 11px 0 11px 10px ;
+    line-height: 1.7;
+  }
+  .store-form__detail:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .store-form__txt {
+    width: 86px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .store-form__txt02 {
+    width: calc(100% - 86px);
+    font-size: 14px;
+  }
+}
 /* profile */
 .profile {
-  min-width: 1084px;
+  max-width: 1084px;
   margin: 0 auto;
   padding: 100px 0;
   text-align: center;
@@ -305,4 +598,14 @@
  justify-content: space-between;
  margin: 0 auto;
  width: 200px;
+}
+
+@media screen and (max-width: 767px) {
+  .profile {
+    width: 100%;
+    padding: 80px 20px;
+  }
+  .profile__title {
+    font-size: 24px;
+  }
 }
