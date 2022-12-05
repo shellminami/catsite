@@ -169,7 +169,7 @@ sp-nav
 .info-data:last-child {
   border-bottom: 1px dashed #ceb967;
 }
-.info-data__data {
+.info-data__date {
   width: 108px;
   margin-right: 24px;
 }
@@ -198,7 +198,7 @@ sp-nav
   text-decoration: underline;
 }
 /* ribbon */
-.ribbon-wrapper {
+.ribbon {
   position: absolute;
   top: 0;
   left: 0;
@@ -221,13 +221,13 @@ sp-nav
   background: #f7320e;
   transform: rotate(-45deg);
 }
-.pd-cardList {
+.pd-card-list {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.pd-cardList__item {
+.pd-card {
   display: flex;
   flex-direction: column;
   width: calc((100% - 40px) / 3);
@@ -237,14 +237,16 @@ sp-nav
 .pd-card__thumb {
   width: 100%;
   height: 190px;
-  background-image: url(../images/img素材書き出しサンプル/dmy_pd001.jpg);
   background-position: center center;
   background-size: cover;
 }
-.pd-card__thumb.sec {
+#pd-keyholder {
+  background-image: url(../images/img素材書き出しサンプル/dmy_pd001.jpg);
+}
+#pd-brooch {
   background-image: url(../images/img素材書き出しサンプル/dmy_pd002.jpg);
 }
-.pd-card__thumb.third {
+#pd-necklace {
   background-image: url(../images/img素材書き出しサンプル/dmy_pd003.jpg);
 }
 .pd-card__body {
@@ -340,7 +342,7 @@ sp-nav
   }
 
   /* ribbon */
-  .ribbon-wrapper {
+  .ribbon {
     position: absolute;
     top: 0;
     left: 0;
@@ -363,15 +365,15 @@ sp-nav
     background: #f7320e;
     transform: rotate(-45deg);
   }
-  .pd-cardList {
+  .pd-card-list {
     flex-direction: column;
     justify-content: space-between;
   }
-  .pd-cardList__item {
+  .pd-card {
     width: 100%;
     padding: 20px 15px;
   }
-  .pd-cardList__item:not(:last-child) {
+  .pd-card:not(:last-child) {
     margin-bottom: 20px;
   }
   .pd-card__body {
@@ -442,16 +444,16 @@ sp-nav
   display: flex;
   flex-wrap: wrap;
 }
-.category-list__item {
+.category {
   width: calc((100% - 40px) / 3);
   border: 1px solid #dddddd;
   margin-right: 20px;
   margin-bottom: 20px;
 }
-.category-list__item:nth-child(3) {
+.category:nth-child(3) {
   margin-right: 0;
 }
-.category {
+.category__link {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -469,7 +471,7 @@ sp-nav
     flex-direction: column;
     flex-wrap: nowrap;
   }
-  .category-list__item {
+  .category {
     width: 100%;
   }
   .category__title {
@@ -495,29 +497,29 @@ sp-nav
   line-height: 1.75;
   padding: 40px 0 80px;
 }
-.store__body {
+.shop {
   display: flex;
   justify-content: space-between;
 }
-.store__body:nth-child(2) {
+.shop:nth-child(2) {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.store__thumb {
+.shop__thumb {
   width: 440px;
   height: 303px;
 }
-.store__detail {
+.shop__detail {
   display: flex;
   flex-direction: column;
   text-align-last: left;
   width: calc(100% - (440px + 20px));
 }
-.store-form__detail {
+.shop__data {
   display: flex;
   flex-direction: row;
 }
-.store__title {
+.shop__name {
   margin-bottom: 30px;
   font-size: 20px;
   font-weight: bold;
@@ -526,7 +528,7 @@ sp-nav
   padding: 8px 0 9px 22px;
   line-height: 1.4;
 }
-.store-form__txt {
+.shop__data-heading {
   width: 100px;
   font-weight: bold;
 }
@@ -542,38 +544,39 @@ sp-nav
     text-align: left;
     padding: 30px 0 50px;
   }
-  .store__body {
+  .shop {
     flex-direction: column;
   }
-  .store__body:nth-child(2) {
+  .shop:nth-child(2) {
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  .store__thumb {
+  .shop__thumb {
     width: 100%;
     height: auto;
   }
-  .store__detail {
+  .shop__detail {
     text-align-last: left;
     width: 100%;
   }
-  .store__title {
+  .shop__name {
     margin: 20px 0;
     font-size: 16px;
     padding: 11px 0 11px 10px;
     line-height: 1.7;
   }
-  .store-form__detail:not(:last-child) {
+  .shop__data:not(:last-child) {
     margin-bottom: 15px;
   }
-  .store-form__txt {
+  .shop__data-heading {
     width: 86px;
     font-weight: bold;
     font-size: 14px;
   }
-  .store-form__txt02 {
+  .shop__data-body {
     width: calc(100% - 86px);
     font-size: 14px;
+    word-break: break-all;
   }
 }
 /* profile */
@@ -596,7 +599,7 @@ sp-nav
   flex-direction: column;
   align-items: center;
 }
-.profile__tag {
+.profile__handlename {
   font-weight: bold;
 }
 .profile__txt {

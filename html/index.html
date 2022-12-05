@@ -64,14 +64,14 @@
 
         <div class="info">
           <div class="info-data">
-            <div class="info-data__data">2021-11-01</div>
+            <div class="info-data__date">2021-11-01</div>
             <span class="info-data__icon--new">新商品情報</span>
             <div class="info-data__txt">
               <a href="#">【焼印付】爪とぎ型キーホルダー登場！</a>
             </div>
           </div>
           <div class="info-data">
-            <div class="info-data__data">2021-10-28</div>
+            <div class="info-data__date">2021-10-28</div>
             <span class="info-data__icon">入荷情報</span>
             <div class="info-data__txt">
               <a href="#"
@@ -80,7 +80,7 @@
             </div>
           </div>
           <div class="info-data">
-            <div class="info-data__data">2021-10-12</div>
+            <div class="info-data__date">2021-10-12</div>
             <span class="info-data__icon">イベント出店</span>
             <div class="info-data__txt">
               <a href="#">ニャンフェス14に参加決定。鋭意新作製作中です！</a>
@@ -96,10 +96,10 @@
           </h2>
         </div>
 
-        <ul class="pd-cardList">
-          <li class="pd-cardList__item">
-            <div class="pd-card__thumb"></div>
-            <div class="ribbon-wrapper">
+        <ul class="pd-card-list">
+          <li class="pd-card">
+            <div id="pd-keyholder" class="pd-card__thumb"></div>
+            <div class="ribbon">
               <span class="ribbon__text">新商品</span>
             </div>
 
@@ -113,12 +113,12 @@
                 <span>（税抜）</span>
               </div>
             </div>
-            <div class="pc-card__botton">
+            <div class="pc-card__button">
               <button class="btn--more">詳細を見る</button>
             </div>
           </li>
-          <li class="pd-cardList__item">
-            <div class="pd-card__thumb sec"></div>
+          <li class="pd-card">
+            <div id="pd-brooch" class="pd-card__thumb"></div>
 
             <div class="pd-card__body">
               <h3 class="pd-card__title">肉球ブローチ（7個セット）</h3>
@@ -130,12 +130,12 @@
                 <span>（税抜）</span>
               </div>
             </div>
-            <div class="pc-card__botton">
+            <div class="pc-card__button">
               <button class="btn--more">詳細を見る</button>
             </div>
           </li>
-          <li class="pd-cardList__item">
-            <div class="pd-card__thumb third"></div>
+          <li class="pd-card">
+            <div id="pd-necklace" class="pd-card__thumb"></div>
 
             <div class="pd-card__body">
               <h3 class="pd-card__title">レース猫首輪（鈴付き）</h3>
@@ -147,7 +147,7 @@
                 <span>（税抜）</span>
               </div>
             </div>
-            <div class="pc-card__botton">
+            <div class="pc-card__button">
               <button class="btn--more">詳細を見る</button>
             </div>
           </li>
@@ -161,8 +161,8 @@
           </h2>
         </div>
         <ul class="category-list">
-          <li class="category-list__item">
-            <a href="#" class="category">
+          <li class="category">
+            <a href="#" class="category__link">
               <div class="category__thumb">
                 <img
                   src="../assets/images/img素材書き出しサンプル/thumb_cate01.jpg"
@@ -174,8 +174,8 @@
               <div class="category__title">レジンブローチ</div>
             </a>
           </li>
-          <li class="category-list__item">
-            <a href="#" class="category">
+          <li class="category">
+            <a href="#" class="category__link">
               <div class="category__thumb">
                 <img
                   src="../assets/images/img素材書き出しサンプル/thumb_cate02.jpg"
@@ -187,8 +187,8 @@
               <div class="category__title">猫用首輪</div>
             </a>
           </li>
-          <li class="category-list__item">
-            <a href="#" class="category">
+          <li class="category">
+            <a href="#" class="category__link">
               <div class="category__thumb">
                 <img
                   src="../assets/images/img素材書き出しサンプル/thumb_cate03.jpg"
@@ -200,8 +200,8 @@
               <div class="category__title">けりぐるみ</div>
             </a>
           </li>
-          <li class="category-list__item">
-            <a href="#" class="category">
+          <li class="category">
+            <a href="#" class="category__link">
               <div class="category__thumb">
                 <img
                   src="../assets/images/img素材書き出しサンプル/thumb_cate04.jpg"
@@ -213,8 +213,8 @@
               <div class="category__title">アクセサリー</div>
             </a>
           </li>
-          <li class="category-list__item">
-            <a href="#" class="category">
+          <li class="category">
+            <a href="#" class="category__link">
               <div class="category__thumb">
                 <img
                   src="../assets/images/img素材書き出しサンプル/thumb_cate05.jpg"
@@ -239,103 +239,101 @@
           商品を実際に手にとってお確かめいただけますので、お近くの方はお気軽にお立ち寄り下さい。
         </p>
 
-        <div class="store">
-          <div class="store__body">
-            <div class="store__thumb">
+        <div class="shops-list">
+          <div class="shop">
+            <div class="shop__thumb">
               <img
                 src="../assets/images/img素材書き出しサンプル/img_rental_kuroneko_douhua.jpg"
                 alt=""
               />
             </div>
-            <div class="store__detail">
-              <div class="store__title">台湾スイーツ豆花専門 黒猫豆花 様</div>
-              <div class="store-form__detail">
-                <div class="store-form__txt">住所</div>
-                <div class="store-form__txt02">
+            <div class="shop__detail">
+              <div class="shop__name">台湾スイーツ豆花専門 黒猫豆花 様</div>
+              <div class="shop__data">
+                <div class="shop__data-heading">住所</div>
+                <div class="shop__data-body">
                   神奈川県川崎市高津区二子2丁目7-40　フォーレスト多摩川102
                 </div>
               </div>
-              <div class="store-form__detail">
-                <div class="store-form__txt">営業時間</div>
-                <div class="store-form__txt02">
+              <div class="shop__data">
+                <div class="shop__data-heading">営業時間</div>
+                <div class="shop__data-body">
                   10:00-21:00（時短営業中は20:00まで）
                 </div>
               </div>
-              <div class="store-form__detail">
-                <div class="store-form__txt">定休日</div>
-                <div class="store-form__txt02">水曜日</div>
+              <div class="shop__data">
+                <div class="shop__data-heading">定休日</div>
+                <div class="shop__data-body">水曜日</div>
               </div>
-              <div class="store-form__detail">
-                <div class="store-form__txt">website</div>
-                <div class="store-form__txt02">
-                  https://kuroneko-douhua.com/
-                </div>
+              <div class="shop__data">
+                <div class="shop__data-heading">website</div>
+                <div class="shop__data-body">https://kuroneko-douhua.com/</div>
               </div>
             </div>
           </div>
-          <div class="store__body middle">
-            <div class="store__thumb">
+          <div class="shop">
+            <div class="shop__thumb">
               <img
                 src="../assets/images/img素材書き出しサンプル/img_rental_mayscafe.jpg"
                 alt=""
               />
             </div>
-            <div class="store__detail">
-              <div class="store__title">
+            <div class="shop__detail">
+              <div class="shop__name">
                 May’s Cafe -ハンドメイド雑貨＆CAFE- 様
               </div>
-              <div class="store-form__detail">
-                <div class="store-form__txt">住所</div>
-                <div class="store-form__txt02">
+              <div class="shop__data">
+                <div class="shop__data-heading">住所</div>
+                <div class="shop__data-body">
                   東京都世田谷区太子堂5-17-20-1F
                 </div>
               </div>
-              <div class="store-form__detail">
-                <div class="store-form__txt">営業時間</div>
-                <div class="store-form__txt02">
+              <div class="shop__data">
+                <div class="shop__data-heading">営業時間</div>
+                <div class="shop__data-body">
                   土日祝日11:00〜19:00のみ営業中
                 </div>
               </div>
-              <div class="store-form__detail">
-                <div class="store-form__txt">定休日</div>
-                <div class="store-form__txt02">月〜金曜日</div>
+              <div class="shop__data">
+                <div class="shop__data-heading">定休日</div>
+                <div class="shop__data-body">月〜金曜日</div>
               </div>
-              <div class="store-form__detail">
-                <div class="store-form__txt">Instagram</div>
-                <div class="store-form__txt02">
-                  hhttps://www.instagram.com/mays._.cafe/
+              <div class="shop__data">
+                <div class="shop__data-heading">Instagram</div>
+                <div class="shop__data-body">
+                  https://www.instagram.com/mays._.cafe/
                 </div>
               </div>
             </div>
           </div>
-          <div class="store__body">
-            <div class="store__thumb">
+          <div class="shop">
+            <div class="shop__thumb">
               <img
                 src="../assets/images/img素材書き出しサンプル/img_rental_nekoshiki.jpg"
                 alt=""
               />
             </div>
-            <div class="store__detail">
-              <div class="store__title">里親募集型猫カフェ 猫式 様</div>
-              <div class="store-form__detail">
-                <div class="store-form__txt">住所</div>
-                <div class="store-form__txt02">
+            <div class="shop__detail">
+              <div class="shop__name">里親募集型猫カフェ 猫式 様</div>
+              <div class="shop__data">
+                <div class="shop__data-heading">住所</div>
+                <div class="shop__data-body">
                   神奈川県川崎市高津区溝口1－20－10　東方ビル3F
                 </div>
               </div>
-              <div class="store-form__detail">
-                <div class="store-form__txt">営業時間</div>
-                <div class="store-form__txt02">
+              <div class="shop__data">
+                <div class="shop__data-heading">営業時間</div>
+                <div class="shop__data-body">
                   12：00～20：00（最終受付19:30）
                 </div>
               </div>
-              <div class="store-form__detail">
-                <div class="store-form__txt">定休日</div>
-                <div class="store-form__txt02">月曜日</div>
+              <div class="shop__data">
+                <div class="shop__data-heading">定休日</div>
+                <div class="shop__data-body">月曜日</div>
               </div>
-              <div class="store-form__detail">
-                <div class="store-form__txt">website</div>
-                <div class="store-form__txt02">https://www.neko-shiki.net/</div>
+              <div class="shop__data">
+                <div class="shop__data-heading">website</div>
+                <div class="shop__data-body">https://www.neko-shiki.net/</div>
               </div>
             </div>
           </div>
@@ -356,7 +354,7 @@
           />
         </div>
         <div class="profile__detail">
-          <span class="profile__tag">@latelierqueue</span>
+          <span class="profile__handlename">@latelierqueue</span>
           <span class="profile__txt"
             >猫雑貨・猫おもちゃ、その他ハンドメイド<br />時々農家になります。</span
           >
