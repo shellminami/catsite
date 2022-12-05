@@ -179,4 +179,8 @@ footer
 .sp-gnav {
   width: 100%;
 }
+.footer {
+  font-size: 14px;
+  font-weight: bold;
+}
 }
