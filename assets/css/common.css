@@ -121,7 +121,6 @@ footer
   position: relative;
   background: #341E12;
   color: #fff;
-  text-align: center;
   padding: 0 20px;
   font-size: 12px;
 }
@@ -179,8 +178,54 @@ footer
 .sp-gnav {
   width: 100%;
 }
-.footer {
-  font-size: 14px;
-  font-weight: bold;
+.sp-gnav__container {
+  width: 100%;
 }
+.sp-gnav__list--upper { 
+  flex-direction: column;
+  margin: 34px 0 41px;
+}
+.sp-gnav__list--upper .sp-gnav__item {
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  font-weight: bold;
+  font-size: 14px;
+  border-bottom: 1px dashed #FFFFFF;
+}
+.sp-gnav__list--upper .sp-gnav__item:first-child {
+  border-top: 1px dashed #ffffff;
+
+}
+.sp-gnav__list--lower {
+  font-size: 12px;
+}
+.sp-gnav__list--lower .sp-gnav__item:not(:last-child)::after {
+  top: -1px;
+  right: -3px;
+}
+.sp-gnav__list--upper .sp-gnav__item:not(:last-child)::after {
+  display: none;
+}
+.sp-gnav__link {
+  display: block;
+  height: 100%;
+  text-align: center;
+}
+
+.footer__pagetop {
+  width: 60px;
+  height: 60px;
+  top: -44px;
+  right: 8px;
+}
+.footer {
+  
+}
+.footer__copyright {
+  font-size: 12px;
+  margin-bottom: 60px;
+}
+
+
 }
