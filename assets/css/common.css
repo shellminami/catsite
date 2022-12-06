@@ -89,6 +89,43 @@ navi
   background: url(../images/img素材書き出しサンプル/ico_paw.svg) center center / contain no-repeat;
 }
 /*----------------------------------------
+section
+------------------------------------- */
+.container {
+  max-width: 1084px;
+  margin: 0 auto;
+}
+/* breadcrumb */
+.breadcrumb {
+  margin-top: 10px;
+  margin-bottom: 73px;
+}
+.breadcrumb__list {
+  display: flex;
+}
+.breadcrumb__item {
+  position: relative;
+  font-size: 12px;
+  padding-right: 12px;
+  margin-right: 5px;
+}
+.breadcrumb__item:not(:last-child)::after{
+  position: absolute;
+  content: " > ";
+  display: block;
+  top: 0;
+  right: 0;
+
+
+}
+.breadcrumb__link {
+  text-decoration-line: underline;
+}
+.breadcrumb__link--current{
+  text-decoration-line: none;
+}
+
+/*----------------------------------------
 footer
 ------------------------------------- */
 .footer {
