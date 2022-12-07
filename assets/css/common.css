@@ -24,6 +24,145 @@ li {
 
 
 /*----------------------------------------
+header
+------------------------------------- */
+.common-header {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: url(../images/img素材書き出しサンプル/bg_top_header.jpg);
+  
+}
+.common-header__body{
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+}
+.common-header__image {
+  position: absolute;
+  width: 400px;
+  top: 30px;
+  left: 30px;
+  bottom: 30px;
+  margin: auto;
+}
+
+@media screen and (max-width:767px) {
+  .common-header {
+    height: 110px;
+    background: url(../images/img素材書き出しサンプル/bg_top_header_sp.jpg);
+    background-size: contain;
+    background-position: center center;
+  }
+
+  .common-header__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+  }
+  
+}
+  
+
+/*----------------------------------------
+navi
+------------------------------------- */
+.common-gnav {
+  background: #F5EFD7;
+}
+.common-gnav__list {
+  max-width: 1084px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.common-gnav__item {
+  padding: 28px 0 24px;
+  font-size: 20px;
+  line-height: 1.4; 
+}
+.common-gnav__item:not(:last-child) {
+  margin-right: 50px;
+}
+.common-gnav__link--current {
+  color: #A88E25;
+  font-weight: bold;
+}
+.common-gnav__link--current::before {
+  display: inline-block;
+  content: "";
+  width: 28px;
+  height: 28px;
+  margin-right: 6px;
+  vertical-align: top;
+  background: url(../images/img素材書き出しサンプル/ico_paw_o.svg) center center / contain no-repeat;
+}
+.common-gnav__link::before {
+  display: inline-block;
+  content: "";
+  width: 28px;
+  height: 28px;
+  margin-right: 6px;
+  vertical-align: top;
+  background: url(../images/img素材書き出しサンプル/ico_paw.svg) center center / contain no-repeat;
+}
+
+@media screen and (max-width:767px) {
+  .common-gnav {
+    display: none;
+  }
+}
+/*----------------------------------------
+section
+------------------------------------- */
+.container {
+  max-width: 1084px;
+  margin: 0 auto;
+}
+/* breadcrumb */
+.breadcrumb {
+  margin-top: 10px;
+  margin-bottom: 73px;
+}
+.breadcrumb__list {
+  display: flex;
+}
+.breadcrumb__item {
+  position: relative;
+  font-size: 12px;
+  padding-right: 12px;
+  margin-right: 5px;
+}
+.breadcrumb__item:not(:last-child)::after{
+  position: absolute;
+  content: " > ";
+  display: block;
+  top: 0;
+  right: 0;
+}
+.breadcrumb__link {
+  text-decoration-line: underline;
+}
+.breadcrumb__link--current{
+  text-decoration-line: none;
+}
+@media screen and (max-width:767px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .breadcrumb {
+    margin-bottom: 56px;
+  }
+  
+}
+
+/*----------------------------------------
 footer
 ------------------------------------- */
 .footer {
@@ -128,9 +267,7 @@ footer
   top: -44px;
   right: 8px;
 }
-.footer {
-  
-}
+
 .footer__copyright {
   font-size: 12px;
   margin-bottom: 60px;
