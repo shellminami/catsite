@@ -14,7 +14,8 @@
 .catstaff__profile {
   background: #F5EFD7;
   display: flex;
-  height: calc( 50vw * 5 / 8 * 1.04 ); /*?*/
+  height: calc( 50vw * 5 / 8 * 1.04 ); 
+  /*画像の幅＊(500px / 800px 比率)*(520px/500px)*/
   padding-left: calc( 50% + 40px);
   padding-right: 40px;
   flex-direction: column;
@@ -35,7 +36,7 @@
 .catstaff__thumnail {
   position: absolute;
   width: 50vw;
-  top: -9.615%; /*?*/
+  top: -10%; /*50px/500px*/
   right: 50%;
   aspect-ratio: 8 / 5;
 }
@@ -46,7 +47,8 @@
 .catstaff__profile--reverse {
   background: #F5EFD7;
   display: flex;
-  height: calc( 50vw * 5 / 8 * 1.04 ); /*?*/
+  height: calc( 50vw * 5 / 8 * 1.04 ); 
+  /*画像の幅＊(500px / 800px 比率)*(520px/500px)*/
   padding-right: calc( 50% + 40px);
   padding-left:40px;
   flex-direction: column;
@@ -55,7 +57,7 @@
 .catstaff__thumnail--reverse {
   position: absolute;
   width: 50vw;
-  top: -9.615%; /*?*/
+  top: -10%; /*50px/500px*/
   left: 50%;
   aspect-ratio: 8 / 5;
 }
@@ -68,15 +70,15 @@
     display: flex;
     flex-direction: column-reverse;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 50px; /**/
   }
   .catstaff__profile {
     height: auto;
-    padding-left:  20px;;
-    padding-right: 20px;
-    padding-top: 30px;
-    padding-bottom: 50px;
-    margin-left: 20px;
+    padding-left:  5.6338%; /*20px / 355px(width)*/
+    padding-right: 5.6338%; /*20px / 355px(width)*/
+    padding-top: 12.7659%; /*30px / 235px(hight)*/
+    padding-bottom: 21.2765%; /*50px / 235px(height)*/
+    margin-left: 5.3333%; /*20px / 375px(width)*/
   }
   .catstaff__name {
     font-size: 22px;
@@ -95,11 +97,11 @@
   .catstaff__profile--reverse {
     display: flex;
     height: auto;
-    padding-right:20px; ;
-    padding-left:20px;
-    padding-top: 30px;
-    padding-bottom: 50px;
-    margin-right: 20px;
+    padding-right:5.6338%; /*20px / 355px(width)*/
+    padding-left:5.6338%; /*20px / 355px(width)*/
+    padding-top: 12.7659%; /*30px / 235px(hight)*/
+    padding-bottom: 21.2765%; /*50px / 235px(height)*/
+    margin-right: 5.3333%; /*20px / 375px(width)*/
     
   }
   .catstaff__thumnail--reverse {

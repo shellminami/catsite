@@ -199,6 +199,9 @@ heading
   text-align: center;
   margin-top: 40px;
 }
+.heading__link {
+  text-decoration: underline;
+}
 @media screen and (max-width: 767px) {
   .heading__name {
     font-size: 30px;
@@ -326,6 +329,4 @@ footer
   font-size: 12px;
   margin-bottom: 60px;
 }
-
-
 }

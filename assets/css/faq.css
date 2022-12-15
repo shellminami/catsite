@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* faq */
+.faq-container {
+  max-width: 1084px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+.faq__text {
+  position: relative;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: bold;
+  background: #F5EFD7;
+  padding: 22px 0 20px 70px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.faq__text--open {
+  position: relative;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: bold;
+  background: #F5EFD7;
+  padding: 22px 0 20px 70px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center; 
+}
+.faq__prefix {
+  font-weight: bold;
+  font-size: 40px;
+  color: #CEB967;
+  margin-right: 23px;
+  position: absolute;
+  top: 8px;
+  left: 15px;
+}
+
+.faq__text::before,
+.faq__text::after 
+{
+  position: absolute;
+  content: "";
+  display: block;
+  background: #341E12;
+  width: 30px;
+  height: 1px;
+  right: 17px;
+  top: 50%;
+  /* transform: translate(-50%, -50%); */
+}
+.faq__text::before {
+  width: 1px;
+  height: 30px;
+  top: calc(50% - 15px); 
+  /*(画面高さの半分落とす) - (height: 30px;の半分を上に戻す)*/
+  right: 31px;
+}
+
+.faq__text--open::after {
+  position: absolute;
+  content: "";
+  display: block;
+  background: #341E12;
+  width: 30px;
+  height: 1px;
+  right: 17px;
+  top: 50%;
+}
+
+.faq__text--answer {
+  padding-top: 24px;
+  padding-bottom: 35px;
+  padding-right: 45px;
+  padding-left: 70px;
+  position: relative;
+}
+.faq__text--answer::before {
+  content: "A";
+  font-size: 40px;
+  font-weight: bold;
+  padding-right: 23px;
+  position: absolute;
+  left: 17px;
+  top: 10px;
+
+}
+@media screen and (max-width : 767px){
+  .faq-container {
+    padding: 40px 0 60px;
+    position: relative;
+  }
+  .faq__text {
+    font-size: 16px;
+    padding-left: 3.123em;/*50(x座標)/16px*/
+    padding-right: 3.437em ;
+  }
+  
+  .faq__text--open {
+    font-size: 16px;
+    padding-left: 3.123em;/*50(x座標)/16px*/
+    padding-right: 3.437em ;
+  }
+  .faq__prefix {
+    font-size: 30px;
+    margin-right: 2.6666%;
+    position: absolute;
+    top: 9px;
+    left: 4%;
+  }
+  .faq__text::before,
+  .faq__text::after {
+    top: 50%;
+    width: 5.3333%;
+    right: 2.6666%;
+  }
+  .faq__text::before {
+    height: 0;
+    
+  }
+  .faq__text--open::after {
+    width: 5.3333%;
+    right: 2.6666%;
+  }
+  .faq__text--answer {
+    padding-top: 8.8560%;
+    padding-bottom: 12.9151%;
+    padding-right: 5.3333%;
+    padding-left: 12%;
+  }
+  .faq__text--answer::before {
+    content: "A";
+    font-size: 30px;
+    line-height: 1.333em;
+    padding-right: 1.333em;
+    position: absolute;
+    left: 3.2%;
+    top: 8.8560%;
+  }
+}
