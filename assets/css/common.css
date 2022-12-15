@@ -159,7 +159,11 @@ section
   .breadcrumb {
     margin-bottom: 56px;
   }
+  .breadcrumb__item {
+    font-size: 10px;
+  }
 }
+
 
 /* ----------------------------------
 heading
@@ -206,6 +210,10 @@ heading
     width: 40px;
     height: 32px;
     background-size: contain;
+  }
+  .heading__description {
+    text-align: left;
+    margin-top: 40px;
   }
 }
 /*----------------------------------------
