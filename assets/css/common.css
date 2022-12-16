@@ -159,9 +159,55 @@ section
   .breadcrumb {
     margin-bottom: 56px;
   }
-  
 }
 
+/* ----------------------------------
+heading
+------------------------------------- */
+
+/* name */
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading__name {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+.heading__name::before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+  height: 48px;
+  background-image: url(../images/img素材書き出しサンプル/ico_paw02.svg);
+}
+.heading__subname {
+  color: #CEB967;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+.heading__description {
+  text-align: center;
+  margin-top: 40px;
+}
+@media screen and (max-width: 767px) {
+  .heading__name {
+    font-size: 30px;
+  }
+  .heading__subname {
+    font-size: 15px;
+  }
+  .heading__name::before {
+    width: 40px;
+    height: 32px;
+    background-size: contain;
+  }
+}
 /*----------------------------------------
 footer
 ------------------------------------- */

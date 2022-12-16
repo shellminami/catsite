@@ -1,48 +1,5 @@
 @charset "UTF-8";
 
-/* ----------------------------------
-products
-------------------------------------- */
-
-/* name */
-.products {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.products__name {
-  font-size: 40px;
-  font-weight: bold;
-  letter-spacing: 0.2em;
-}
-.products__name::before {
-  content: "";
-  display: block;
-  margin: 0 auto;
-  width: 60px;
-  height: 48px;
-  background-image: url(../images/img素材書き出しサンプル/ico_paw02.svg);
-}
-.products__subname {
-  color: #CEB967;
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 0.2em;
-}
-@media screen and (max-width: 767px) {
-  .products__name {
-    font-size: 30px;
-  }
-  .procust__subname {
-    font-size: 15px;
-  }
-  .products__name::before {
-    width: 40px;
-    height: 32px;
-    background-size: contain;
-  }
-}
 /* category */
 .products-category {
   width: 100%;
