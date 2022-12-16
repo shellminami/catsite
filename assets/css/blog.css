@@ -128,6 +128,7 @@
 @media screen and (max-width: 767px) {
   .blog-card__item {
     padding-top: 20px;
+    padding-bottom: 20px;
   }
   .blog-card__item:last-child {
     border-bottom: 1px dashed #CEB967;
@@ -244,7 +245,7 @@
 
 /* pagenation */
 .pagenation {
-  /* margin-top: 50px; */
+  margin-top: 80px;
   margin-bottom: 100px;
 }
 .pagenation__list {
