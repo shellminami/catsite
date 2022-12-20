@@ -203,7 +203,7 @@ heading
   text-decoration: underline;
 }
 @media screen and (max-width: 767px) {
-  .heading__name {
+  .heading__title  {
     font-size: 30px;
   }
   .heading__subtitle {
