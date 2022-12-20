@@ -122,7 +122,7 @@ p:last-child {
   top: 0;
 }
 @media screen and (max-width: 767px) {
-  .main {
+  .main__frame{
     width: 100%;
     padding: 0 20px;;
   }
@@ -132,7 +132,7 @@ p:last-child {
   }
   .main__thumb {
     margin: 30px 0;
-    /* width: 100%; */
+    width: 100%;
     height: auto;
   }
   .main__image {
