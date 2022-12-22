@@ -3,8 +3,8 @@
 /* category */
 .products-category {
   width: 100%;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 60px;
+  margin-bottom: 50px;
   border-bottom: 5px solid #CEB967;
 }
 .products-category__list {
@@ -341,3 +341,4 @@
    
   }
 }
+
