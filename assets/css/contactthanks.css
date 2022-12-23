@@ -1,17 +1,15 @@
 @charset "utf-8";
-.heading__title-br {
-  display: none;
-}
+
 .contact{
   max-width: 800px;
   margin: 60px auto 0;
   
 }
 .contact__body {
-  padding: 40px ;
+  padding: 60px 0;
   background: #F5EFD7;
 }
-/* .contact__title {
+.contact__title {
   text-align: center;
   margin-bottom: 40px;
   font-size: 24px;
@@ -19,30 +17,23 @@
 }
 .contact__title-br {
   display: none;
-} */
+}
 .contact__text {
+  padding: 0 40px;
   line-height: 1.75;
 }
 
 
 
 @media screen and (max-width:767px) {
-  .heading__title {
-    text-align: center;
-  }
-  .heading__title-br{
-    display: block;
-  }
   .contact{
     width: 100%;
     margin: 40px auto 0;
   }
-  .contact__body {
-    padding: 40px 0;
-  }
-  /* .contact__title {
+
+  .contact__title {
     padding: 0 40px;
-  } */
+  }
   .contact__title-br {
     display: block;
   }
