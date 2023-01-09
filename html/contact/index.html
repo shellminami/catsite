@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="../../assets/css/contact.css">
 </head>
 <body>
-   <!-- header -->
-   <header>
+  <!-- header -->
+  <header>
     <div class="common-header">
       <div class="common-header__body">
         <img class="common-header__image" src="../../assets/images/img素材書き出しサンプル/logo_under_header.svg" alt="-nekonokomono-l'atelier Queue">
@@ -50,8 +50,8 @@
   </nav>
   <!-- section -->
   <section class="container">
-    <!-- breadcrumb -->
-    <div class="breadcrumb">
+     <!-- breadcrumb -->
+     <div class="breadcrumb">
       <ul class="breadcrumb__list">
         <li class="breadcrumb__item">
           <a href="#"class="breadcrumb__link">
@@ -78,61 +78,106 @@
       </p>
     </div>
   </section>
-  <div class="contact">
+  <div class="form">
+      <div class="form__item">
+        <div class="form__item--topic">
+          <p class="form__item-label">お問合せ種類</p>
+          <span class="form__item-lavel--required">必須</span>
+        </div>
+        <div class="form__select">
+          <select name="menu" class="for__select--text">
+            <option value="">選択して下さい</option>
+          </select>
+        </div>
+        
+          <div class="contact__error">
+            お問合せ種類を選択してください。
+          </div>
+
+      </div>
+      <div class="form__item">
+          <div class="form__item--topic">
+            <p class="form__item-label">お問合せ内容</p>
+            <span class="form__item-lavel--required">必須</span>
+          </div>
+          <textarea class="form__item--textarea" 
+          placeholder="">お問合せ内容をご記入下さい
+          </textarea>
+            <div class="contact__error">
+              お問合せ内容を記入してください。
+            </div>
+      </div>
+      <div class="form__item">
+        <div class="form__item--topic">
+          <p class="form__item-label">お名前</p>
+          <span class="form__item-lavel--required">必須</span>
+        </div>
+        <input type="text" class="form__item--input" 
+        placeholder="猫野三毛蔵">
+        <div class="contact__error">
+          お名前を記入してください。
+        </div>
+        <span class="form__item--bottom">※ニックネームなどでも結構です。</span>
+      </div>
+      <div class="form__item">
+        <div class="form__item--topic">
+          <p class="form__item-label">返信用メールアドレス</p>
+          <span class="form__item-lavel--required">必須</span>
+        </div>
+        <input type="email" class="form__item--input" 
+        placeholder="mikezou@sample.jp">
+        <div class="contact__error">
+          返信用メールアドレス正しい形式で記入してください。
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="button-wrap">
+      <button class="button">入力内容を確認する</button>
+    </div>
+
     
 
-  </div>
-  <button class="button">
 
-  </button>
 
-   <!-- footer -->
-<footer class="footer">
-  <div class="footer__pagetop"></div>
-  <div class="footer__container">
-    <img
-      class="sp-gnav__image"
-      src="../../assets/images/img素材書き出しサンプル/logo_footer.svg"
-      alt=""
-    />
-    <nav class="sp-gnav__container">
-      <ul class="sp-gnav__list--upper">
-        <li class="sp-gnav__item">
-          <a class="sp-gnav__link" href="#">トップページ</a>
-        </li>
-        <li class="sp-gnav__item">
-          <a class="sp-gnav__link" href="#">商品一覧</a>
-        </li>
-        <li class="sp-gnav__item">
-          <a class="sp-gnav__link" href="#">ねこブログ</a>
-        </li>
-        <li class="sp-gnav__item">
-          <a class="sp-gnav__link" href="#">ねこ店員紹介</a>
-        </li>
-        <li class="sp-gnav__item">
-          <a class="sp-gnav__link" href="#">よくあるご質問</a>
-        </li>
-        <li class="sp-gnav__item">
-          <a class="sp-gnav__link" href="#">お問い合わせ</a>
-        </li>
-      </ul>
-      <ul class="sp-gnav__list--lower">
-        <li class="sp-gnav__item">
-          <a class="sp-gnav__link" href="#">特定商取引法に関する表記</a>
-        </li>
-        <li class="sp-gnav__link">
-          <a class="sp-gnav__link" href="#">プライバシーポリシー</a>
-        </li>
-      </ul>
-    </nav>
-    <small class="footer__copyright">
-      @l’atelier Queue All Rights Reserved.2021</small
-    >
-  </div>
-</footer>
-
-</body>
-</html>
+  <!-- footer -->
+   <footer class="footer">
+    <div class="footer__pagetop"></div>
+      <div class="footer__container sp-gnav">
+        <img class="sp-gnav__image" src="../../assets/images/img素材書き出しサンプル/logo_footer.svg">
+        <nav class="sp-gnav__container">
+          <ul class="sp-gnav__list--upper">
+            <li class="sp-gnav__item">
+              <a class="sp-gnav__link" href="#">トップページ</a>
+            </li>
+            <li class="sp-gnav__item">
+              <a class="sp-gnav__link" href="#">商品一覧</a>
+            </li>
+            <li class="sp-gnav__item">
+              <a class="sp-gnav__link" href="#">ねこブログ</a>
+            </li>
+            <li class="sp-gnav__item">
+              <a class="sp-gnav__link" href="#">ねこ店員紹介</a>
+            </li>
+            <li class="sp-gnav__item">
+              <a class="sp-gnav__link" href="#">よくあるご質問</a>
+            </li>
+            <li class="sp-gnav__item">
+              <a class="sp-gnav__link" href="#">お問い合わせ</a>
+            </li>
+          </ul>
+          <ul class="sp-gnav__list--lower">
+            <li class="sp-gnav__item">
+              <a class="sp-gnav__link" href="#">特定商取引法に関する表記</a>
+            </li>
+            <li class="sp-gnav__item">
+              <a class="sp-gnav__link" href="#">プライバシーポリシー</a>
+            </li>
+          </ul>
+        </nav>
+        <small class="footer__copyright">&copy;l’atelier Queue All Rights Reserved. 2021</small>
+    </div>
+  </footer>
 
   
 </body>
