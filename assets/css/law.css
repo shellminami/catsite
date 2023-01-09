@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+.heading__description {
+  text-align: left;
+}
+.heading__title-br {
+  display: none;
+}
+
+@media screen and (max-width:767px) {
+  .heading__title {
+    text-align: center;
+  }
+  .heading__title-br {
+    display: block;
+    text-align: center;
+  }
+}
+/* table */
+.table--law {
+  max-width: 800px;
+  width: 100%;
+  margin: 60px auto 100px;
+}
+th,td {
+  border: solid 1px #CEB967;
+}
+
+th {
+  width: 800px;
+  height: 56px;
+}
+.table--law-first {
+  width: 240px;
+  padding: 20px ;
+  font-weight: bold;
+  background-color: #F5EFD7;
+}
+.table--law-last {
+  padding: 20px ;
+}
+@media screen and (max-width:767px) {
+  .table--law {
+    width: 100%;
+    padding: 0 20px;
+    margin: 40px auto 80px;
+    font-size: 12px;
+  }
+  .table--law-first {
+    width: 34.3283%;
+    /* 115px / 335px  */
+    padding: 15px;
+  }
+  .table--law-last {
+    width: 65.6716%;
+    /* 100-(115px / 335px) */
+    padding: 15px;
+  }
+}
